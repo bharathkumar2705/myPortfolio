@@ -1,6 +1,5 @@
 import { useState, useEffect, useRef } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { SiLeetcode } from "react-icons/si";
 import { FiDownload, FiChevronDown } from "react-icons/fi";
 import bharathImg from "../assets/bharath.JPG";
 import resumeFile from "../assets/Resume.pdf";
@@ -100,9 +99,6 @@ const Hero = () => {
               </a>
               <a href={socialLinks.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn Profile">
                 <FaLinkedin />
-              </a>
-              <a href={socialLinks.leetcode} target="_blank" rel="noreferrer" aria-label="LeetCode Profile">
-                <SiLeetcode />
               </a>
             </div>
           </div>

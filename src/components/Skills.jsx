@@ -6,6 +6,7 @@ import {
 import {
   SiJavascript, SiCplusplus, SiMysql, SiExpress,
   SiVscodium, SiArduino, SiVite, SiC,
+  SiDart, SiFlutter, SiFirebase, SiMongodb,
 } from "react-icons/si";
 import useScrollReveal from "../hooks/useScrollReveal";
 import { skills } from "../data/portfolioData";
@@ -18,6 +19,8 @@ const ICON_MAP = {
   SiMysql: SiMysql, SiExpress: SiExpress,
   SiVscodium: SiVscodium, SiArduino: SiArduino,
   SiVite: SiVite, SiC: SiC,
+  SiDart: SiDart, SiFlutter: SiFlutter,
+  SiFirebase: SiFirebase, SiMongodb: SiMongodb,
 };
 
 const TABS = [

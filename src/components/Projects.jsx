@@ -4,7 +4,7 @@ import { FiExternalLink, FiCode } from "react-icons/fi";
 import useScrollReveal from "../hooks/useScrollReveal";
 import { projects } from "../data/portfolioData";
 
-const CATEGORIES = ["All", "Web", "DSA", "Embedded", "IoT"];
+const CATEGORIES = ["All", "Web", "Mobile", "Full Stack"];
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("All");
@@ -24,7 +24,7 @@ const Projects = () => {
             Featured <span className="gradient-text">Projects</span>
           </h2>
           <p className="section-subtitle">
-            Things I&apos;ve built — from DSA simulations to embedded IoT systems.
+            Things I&apos;ve built — web applications, mobile apps, and tools.
           </p>
         </div>
 

@@ -1,27 +1,20 @@
 import { useState, useEffect, useCallback } from "react";
 import { FaGithub, FaLinkedin, FaHeart } from "react-icons/fa";
-import { SiLeetcode, SiHackerrank, SiCodechef } from "react-icons/si";
 import { FiArrowUp } from "react-icons/fi";
 import { personalInfo, socialLinks } from "../data/portfolioData";
 
 const NAV_LINKS = [
-  { href: "#home",           label: "Home"          },
-  { href: "#about",          label: "About"         },
-  { href: "#education",      label: "Education"     },
-  { href: "#skills",         label: "Skills"        },
-  { href: "#projects",       label: "Projects"      },
-  { href: "#experience",     label: "Experience"    },
-  { href: "#certifications", label: "Certifications"},
-  { href: "#achievements",   label: "Achievements"  },
-  { href: "#contact",        label: "Contact"       },
+  { href: "#home",      label: "Home"      },
+  { href: "#about",     label: "About"     },
+  { href: "#education", label: "Education" },
+  { href: "#skills",    label: "Skills"    },
+  { href: "#projects",  label: "Projects"  },
+  { href: "#contact",   label: "Contact"   },
 ];
 
 const SOCIALS = [
-  { icon: <FaGithub />,     href: socialLinks.github,     label: "GitHub"     },
-  { icon: <FaLinkedin />,   href: socialLinks.linkedin,   label: "LinkedIn"   },
-  { icon: <SiLeetcode />,   href: socialLinks.leetcode,   label: "LeetCode"   },
-  { icon: <SiHackerrank />, href: socialLinks.hackerrank, label: "HackerRank" },
-  { icon: <SiCodechef />,   href: socialLinks.codechef,   label: "CodeChef"   },
+  { icon: <FaGithub />,   href: socialLinks.github,   label: "GitHub"   },
+  { icon: <FaLinkedin />, href: socialLinks.linkedin, label: "LinkedIn" },
 ];
 
 const Footer = () => {

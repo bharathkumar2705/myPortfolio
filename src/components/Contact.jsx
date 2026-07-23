@@ -3,9 +3,6 @@ import {
   FaGithub, FaLinkedin,
 } from "react-icons/fa";
 import {
-  SiLeetcode, SiHackerrank, SiCodechef,
-} from "react-icons/si";
-import {
   FiMail, FiPhone, FiMapPin, FiSend, FiDownload,
 } from "react-icons/fi";
 import useScrollReveal from "../hooks/useScrollReveal";
@@ -34,11 +31,8 @@ const CONTACT_ITEMS = [
 ];
 
 const SOCIAL_LINKS = [
-  { icon: <FaGithub />,    label: "GitHub",     href: socialLinks.github    },
-  { icon: <FaLinkedin />,  label: "LinkedIn",   href: socialLinks.linkedin  },
-  { icon: <SiLeetcode />,  label: "LeetCode",   href: socialLinks.leetcode  },
-  { icon: <SiHackerrank />,label: "HackerRank", href: socialLinks.hackerrank},
-  { icon: <SiCodechef />,  label: "CodeChef",   href: socialLinks.codechef  },
+  { icon: <FaGithub />,   label: "GitHub",   href: socialLinks.github   },
+  { icon: <FaLinkedin />, label: "LinkedIn", href: socialLinks.linkedin },
 ];
 
 const Contact = () => {
