@@ -1,43 +1,51 @@
-import { useEffect } from "react";
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Projects from "./components/Projects";
-import Resume from "./components/Resume";
-import './style.css';
+import { useState, useEffect } from "react";
+import Navbar         from "./components/Navbar";
+import Hero           from "./components/Hero";
+import About          from "./components/About";
+import Education      from "./components/Education";
+import Skills         from "./components/Skills";
+import Projects       from "./components/Projects";
+import Experience     from "./components/Experience";
+import Certifications from "./components/Certifications";
+import Achievements   from "./components/Achievements";
+import Contact        from "./components/Contact";
+import Footer         from "./components/Footer";
+import "./index.css";
 
+// Loading screen component
+const Loader = ({ hidden }) => (
+  <div className={`loader${hidden ? " hidden" : ""}`} aria-label="Loading portfolio" role="status">
+    <div className="loader__ring" aria-hidden="true" />
+    <span className="loader__text">Loading…</span>
+  </div>
+);
 
 function App() {
-    useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("show");
-                }
-            });
-        }, { threshold: 0.1 });
+  const [loaded, setLoaded] = useState(false);
 
-        document.querySelectorAll(".section, .card, .skill-box").forEach((el) => {
-            el.classList.add("hidden");
-            observer.observe(el);
-        });
+  useEffect(() => {
+    const t = setTimeout(() => setLoaded(true), 800);
+    return () => clearTimeout(t);
+  }, []);
 
-        return () => observer.disconnect();
-    }, []);
-
-    return (
-        <>
-            <Header />
-            <Hero />
-            <About />
-            <Projects />
-            <Resume />
-            <Contact />
-            <Footer />
-        </>
-    );
+  return (
+    <>
+      <Loader hidden={loaded} />
+      <Navbar />
+      <main id="main-content">
+        <Hero />
+        <About />
+        <Education />
+        <Skills />
+        <Projects />
+        <Experience />
+        <Certifications />
+        <Achievements />
+        <Contact />
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
