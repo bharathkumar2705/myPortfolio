@@ -1,4 +1,4 @@
-import resumeFile from "../assets/Bharath_Resume.pdf";
+import resumeFile from "../assets/Resume.pdf";
 
 const Resume = () => (
     <section id="resume" className="section">

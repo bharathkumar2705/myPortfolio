@@ -95,30 +95,16 @@ export const projects = [
     liveUrl: "https://whatsapp-ai-neww.vercel.app",
     featured: true,
   },
-
   {
     id: 3,
-    title: "Multi-View Project Tracker",
-    description: "A multi-view project tracking system with task management, board/list views, and progress visualization.",
-    techStack: ["TypeScript", "React", "CSS3", "Vercel"],
-    category: "Web",
-    githubUrl: "https://github.com/bharathkumar2705/Multi-View-Project-Tracker",
-    liveUrl: "https://multi-view-project-tracker-six.vercel.app",
-    featured: false,
+    title: "MediCare360",
+    description: "Developed a full-stack telemedicine and healthcare ecosystem platform to streamline doctor consultations, appointment scheduling, digital prescriptions, diagnostic lab bookings, and pharmacy orders. Features real-time WebRTC video calling, Razorpay UPI payments, and role-based access control for patients, doctors, and administrators, enhancing healthcare delivery and clinical workflows efficiently.",
+    techStack: ["React", "Node.js", "Express", "MongoDB", "WebRTC", "Socket.io", "Razorpay"],
+    category: "Full Stack",
+    githubUrl: "https://github.com/bharathkumar2705/MdiCare360",
+    liveUrl: "https://mdi-care360.vercel.app/",
+    featured: true,
   },
-
-
-  {
-    id: 4,
-    title: "Math Quiz Platform",
-    description: "An interactive math quiz platform for testing problem-solving skills with timed challenges and analytics.",
-    techStack: ["JavaScript", "HTML5", "CSS3"],
-    category: "Web",
-    githubUrl: "https://github.com/bharathkumar2705/mathquizplatform",
-    liveUrl: "https://mathquizplatform.vercel.app",
-    featured: false,
-  },
-
 ];
 
 
